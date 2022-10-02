@@ -38,13 +38,16 @@ function gen1() {
     let q1o4 = document.getElementById("q1o4");
     let timer1 = document.getElementById("timer1")
     timer1.innerHTML = "";
-    q1num.innerHTML = qArray.indexOf(q) + 1;
+    q1num.innerHTML = qArray.indexOf(q) + 1 + ")";
     q1.innerHTML = q[0];
     q1o1.innerHTML = q[1];
     q1o2.innerHTML = q[2];
     q1o3.innerHTML = q[3];
     q1o4.innerHTML = q[4];
     list1.style.listStyleType = "upper-alpha";
+    setTimeout(() => {
+        timer1.style.border = "4px solid rgb(38, 255, 0)";
+    }, 1000);
     let sec = 29;
     let t1 = setInterval(function () {
         if (q1.innerHTML == q[0]) {
@@ -59,7 +62,7 @@ function gen1() {
     }, 1000);
 
 
-    setTimeout(() => {
+    let s1 = setTimeout(() => {
         if (q1.innerHTML == q[0]) {
             q1num.innerHTML = "";
             q.innerHTML = "";
@@ -70,8 +73,11 @@ function gen1() {
             q1o4.innerHTML = "";
             timer1.innerHTML = "";
             list1.style.listStyleType = "none";
+            timer1.style.border = "none";
         }
-
+        else {
+            clearTimeout(s1);
+        }
     }, 47000);
 }
 
@@ -86,6 +92,9 @@ function gen2() {
     let q2o4 = document.getElementById("q2o4");
     let timer2 = document.getElementById("timer2")
     timer2.innerHTML = "";
+    setTimeout(() => {
+        timer2.style.border = "4px solid rgb(38, 255, 0)";
+    }, 1000);
     q2num.innerHTML = qArray.indexOf(q) + 1;
     q2.innerHTML = q[0];
     q2o1.innerHTML = q[1];
@@ -107,7 +116,7 @@ function gen2() {
         }
     }, 1000);
 
-    setTimeout(() => {
+    let s2 = setTimeout(() => {
         if (q2.innerHTML == q[0]) {
             q2num.innerHTML = "";
             q.innerHTML = "";
@@ -118,9 +127,11 @@ function gen2() {
             q2o4.innerHTML = "";
             timer2.innerHTML = "";
             list2.style.listStyleType = "none";
-            clearInterval(t2);
+            timer2.style.border = "none";
         }
-
+        else {
+            clearTimeout(s2);
+        }
     }, 47000);
 }
 
@@ -135,6 +146,9 @@ function gen3() {
     let q3o4 = document.getElementById("q3o4");
     let timer3 = document.getElementById("timer3")
     timer3.innerHTML = "";
+    setTimeout(() => {
+        timer3.style.border = "4px solid rgb(38, 255, 0)";
+    }, 1000);
     q3num.innerHTML = qArray.indexOf(q) + 1;
     q3.innerHTML = q[0];
     q3o1.innerHTML = q[1];
@@ -154,7 +168,7 @@ function gen3() {
             clearInterval(t3);
         }
     }, 1000);
-    setTimeout(() => {
+    let s3 = setTimeout(() => {
         if (q3.innerHTML == q[0]) {
             q3num.innerHTML = "";
             q.innerHTML = "";
@@ -165,9 +179,11 @@ function gen3() {
             q3o4.innerHTML = "";
             timer3.innerHTML = "";
             list3.style.listStyleType = "none";
-            clearInterval(t3);
+            timer3.style.border = "none";
         }
-
+        else {
+            clearTimeout(s3);
+        }
     }, 47000);
 }
 
@@ -182,6 +198,9 @@ function gen4() {
     let q4o4 = document.getElementById("q4o4");
     let timer4 = document.getElementById("timer4")
     timer4.innerHTML = "";
+    setTimeout(() => {
+        timer4.style.border = "4px solid rgb(38, 255, 0)";
+    }, 1000);
     q4num.innerHTML = qArray.indexOf(q) + 1;
     q4.innerHTML = q[0];
     q4o1.innerHTML = q[1];
@@ -201,7 +220,7 @@ function gen4() {
             clearInterval(t4);
         }
     }, 1000);
-    setTimeout(() => {
+    let s4 = setTimeout(() => {
         if (q4.innerHTML == q[0]) {
             q4num.innerHTML = "";
             q.innerHTML = "";
@@ -212,8 +231,10 @@ function gen4() {
             q4o4.innerHTML = "";
             timer4.innerHTML = "";
             list4.style.listStyleType = "none";
-            clearInterval(t4);
+            timer4.style.border = "none";
         }
-
+        else {
+            clearTimeout(s4);
+        }
     }, 47000);
 }
