@@ -1,4 +1,4 @@
-qArray = [
+const qArray = [
     ["What is the capital of France?", "Paris", "London", "Berlin", "Rome"],
     ["How many states are in the United States?", "50", "49", "51", "48"],
     ["What is the capital of the United States?", "Washington, D.C.", "New York City", "Los Angeles", "Chicago"],
