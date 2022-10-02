@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="square" id="s1" onclick="gen1()">
+            <div class="q-container">
+                <p class="q-num" id="q1-num"></p>
+                <h3 class="question" id="q1"></h3>
+            </div>
+            <ol id="list1">
+                <li id="q1o1"></li>
+                <li id="q1o2"></li>
+                <li id="q1o3"></li>
+                <li id="q1o4"></li>
+            </ol>
+            <p class="timer" id="timer1"></p>
+        </div>
+        
+        <div class="square" id="s2" onclick="gen2()">
+            <div class="q-container">
+                <p class="q-num" id="q2-num"></p>
+                <h3 class="question" id="q2"></h3>
+            </div>
+            <ol id="list2">
+                <li id="q2o1"></li>
+                <li id="q2o2"></li>
+                <li id="q2o3"></li>
+                <li id="q2o4"></li>
+            </ol>
+            <p class="timer" id="timer2"></p>
+        </div>
+
+        <div class="square" id="s3" onclick="gen3()">
+            <div class="q-container">
+                <p class="q-num" id="q3-num"></p>
+                <h3 class="question" id="q3"></h3>
+            </div>
+            <ol id="list3">
+                <li id="q3o1"></li>
+                <li id="q3o2"></li>
+                <li id="q3o3"></li>
+                <li id="q3o4"></li>
+            </ol>
+            <div class="timer" id="timer3"></div>
+        </div>
+
+        <div class="square" id="s4" onclick="gen4()">
+            <div class="q-container">
+                <p class="q-num" id="q4-num"></p>
+                <h3 class="question" id="q4"></h3>
+            </div>
+            <ol id="list4">
+                <li id="q4o1"></li>
+                <li id="q4o2"></li>
+                <li id="q4o3"></li>
+                <li id="q4o4"></li>
+            </ol>
+            <p class="timer" id="timer4"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
