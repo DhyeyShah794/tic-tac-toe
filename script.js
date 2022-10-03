@@ -1,5 +1,6 @@
 const qArray = [
-    [""]
+    ["hello I am a question", "A", "B", "C", "D"],
+    ["hello I am a question too", "A", "B", "C", "D"]
 ];
 
 function gen1() {
