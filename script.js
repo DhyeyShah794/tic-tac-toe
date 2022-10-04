@@ -1,6 +1,31 @@
 const qArray = [
     ["hello I am a question", "A", "B", "C", "D"],
     ["hello I am a question too", "A", "B", "C", "D"]
+    ["What is the capital of France?", "Paris", "London", "Berlin", "Rome"],
+    ["How many states are in the United States?", "50", "49", "51", "48"],
+    ["What is the capital of the United States?", "Washington, D.C.", "New York City", "Los Angeles", "Chicago"],
+    ["How many continents are there?", "7", "6", "8", "9"],
+    ["When did World War II end?", "1945", "1939", "1944", "1943"],
+    ["How many planets are in our solar system?", "8", "9", "7", "10"],
+    ["What is the largest country in the world?", "Russia", "China", "Canada", "United States"],
+    ["What is the smallest country in the world?", "Vatican City", "Monaco", "San Marino", "Nauru"],
+    ["What is the largest ocean in the world?", "Pacific Ocean", "Atlantic Ocean", "Indian Ocean", "Arctic Ocean"],
+    ["Where is the Great Barrier Reef located?", "Australia", "New Zealand", "Fiji", "Indonesia"],
+    ["What is the longest river in the world?", "Nile River", "Amazon River", "Yangtze River", "Mississippi River"],
+    ["What is the tallest mountain in the world?", "Mount Everest", "K2", "Kangchenjunga", "Lhotse"],
+    ["What is the largest desert in the world?", "Sahara Desert", "Gobi Desert", "Kalahari Desert", "Arabian Desert"],
+    ["What is the largest country in Africa?", "Algeria", "Nigeria", "Egypt", "South Africa"],
+    ["What is the largest country in South America?", "Brazil", "Argentina", "Colombia", "Peru"],
+    ["What is the largest country in Asia?", "China", "India", "Russia", "Indonesia"],
+    ["What is the largest country in Europe?", "Russia", "France", "Germany", "United Kingdom"],
+    ["How many countries are there in the world?", "195", "196", "197", "198"],
+    ["What is the largest city in the world?", "Tokyo", "Delhi", "Shanghai", "Sao Paulo"],
+    ["How many bones are there in the human body?", "206", "207", "208", "209"],
+    ["What is the largest organ in the human body?", "Skin", "Heart", "Lungs", "Liver"],
+    ["What is the smallest bone in the human body?", "Stapes", "Malleus", "Incus", "Tympanic Membrane"],
+    ["How many colors are there in a rainbow?", "7", "8", "9", "10"],
+    ["How many days are there in a leap year?", "366", "365", "364", "367"],
+    ["How many days are there in a non-leap year?", "365", "366", "364", "367"],
 ];
 
 function gen1() {
@@ -33,7 +58,7 @@ function gen1() {
             }
             if (sec<=9)
             {
-                timer1.style.border = "4px solid rgb(232, 32, 232)";
+                timer1.style.border = "4px solid rgb(255, 32, 32)";
             }
             else
             {
@@ -43,6 +68,7 @@ function gen1() {
             sec--;
         } 
         else {
+            console.log("Interval cleared: ");
             clearInterval(t1);
         }
     }, 1050);
@@ -107,6 +133,7 @@ function gen2() {
             sec--;
         } 
         else {
+            console.log("Interval cleared: ");
             clearInterval(t2);
         }
     }, 1050);
@@ -171,6 +198,7 @@ function gen3() {
             sec--;
         } 
         else {
+            console.log("Interval cleared: ");
             clearInterval(t3);
         }
     }, 1050);
@@ -256,6 +284,7 @@ function gen4() {
             
         }
         else {
+            console.log("Interval cleared: ");
             clearTimeout(s4);
         }
     }, 65100);
