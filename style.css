@@ -26,8 +26,8 @@ body {
   padding: 1rem;
   cursor: pointer;
   color: rgb(233, 233, 233);
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; */
 }
 
 .q-container {
@@ -48,7 +48,7 @@ body {
 
 ol {
   list-style-type: none;
-  min-height: 4.5rem;
+  min-height: 6rem;
 }
 
 li {
@@ -89,9 +89,9 @@ li {
 }
 
 #s4 {
-  background-color: rgb(239, 236, 54);
-  box-shadow: inset 5px 5px rgb(255, 246, 149),
-    5px 5px rgba(115, 110, 21, 0.744);
+  background-color: rgb(239, 54, 171);
+  box-shadow: inset 5px 5px rgb(232, 149, 255),
+    5px 5px rgba(113, 21, 115, 0.744);
 }
 
 .square:active {
